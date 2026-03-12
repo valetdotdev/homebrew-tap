@@ -1,18 +1,15 @@
 # Homebrew Valet
 
-Homebrew tap for [Valet](https://valet.dev), an AI assistant for developers.
+Homebrew tap for [Valet](https://valet.dev). Valet runs your agents.
 
 ## Installation
 
 ```bash
-brew tap valetdotdev/tap
-brew install --cask valet
+brew install valetdotdev/tap/valet
 ```
 
 ## Updating
 
 ```bash
-brew upgrade --cask valet
+brew upgrade valet
 ```
-
-Or use Valet's built-in auto-updater.
