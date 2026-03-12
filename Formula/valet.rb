@@ -1,4 +1,4 @@
-class ValetCli < Formula
+class Valet < Formula
   desc "Valet runs your agents"
   homepage "https://valet.dev"
   version "0.1.20"
