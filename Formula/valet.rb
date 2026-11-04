@@ -1,25 +1,25 @@
 class Valet < Formula
   desc "Valet runs your agents"
   homepage "https://valet.dev"
-  version "0.1.108"
+  version "0.1.109"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/valetdotdev/homebrew-tap/releases/download/valet-cli-v#{version}/valet-cli-#{version}-darwin-arm64.tar.gz"
-      sha256 "a3bc3dca61eb750a611517a578513c301220f1b73ea5c69a3ad555466845d28f"
+      sha256 "0b39df72c8384baf16884d4877b238feb14e77cc4c3634b1d6ff366359b430b8"
     else
       url "https://github.com/valetdotdev/homebrew-tap/releases/download/valet-cli-v#{version}/valet-cli-#{version}-darwin-amd64.tar.gz"
-      sha256 "8afe974467c7b9399a98d632e052f0f7df930cf853eabb5fd19d2cf0b923d05f"
+      sha256 "fc26a01e8c411988d8645d8c1b6ce3246d53da24eeb7fc8a12748fa5f955654b"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/valetdotdev/homebrew-tap/releases/download/valet-cli-v#{version}/valet-cli-#{version}-linux-arm64.tar.gz"
-      sha256 "8ea779ff680fcd486a3f0ed95778d5658f0e1de7c21d7ad888072f628384ef20"
+      sha256 "440d77ceeaf1ac49276ba2ffff91c08710316df8c54482b8091da1989378b244"
     else
       url "https://github.com/valetdotdev/homebrew-tap/releases/download/valet-cli-v#{version}/valet-cli-#{version}-linux-amd64.tar.gz"
-      sha256 "ac3f48ad676ec86937031de31c86f1b09975384debdb22a90c2e5ccd996bfaaa"
+      sha256 "0a357a0a6fdf4565794324183543b094a83c146b952fd266dcb7a092183ad175"
     end
   end
 
@@ -28,6 +28,6 @@ class Valet < Formula
   end
 
   test do
-    assert_match "0.1.108", shell_output("#{bin}/valet version")
+    assert_match "0.1.109", shell_output("#{bin}/valet version")
   end
 end
